@@ -1,4 +1,30 @@
+// popup
+
+document.addEventListener("DOMContentLoaded", function () {
+    const overlay = document.getElementById('overlay');
+    const closeBtn = document.getElementById('closeBtn');
+
+    // Show popup on page load
+    overlay.style.display = 'block';
+
+    // Close popup when close button is clicked
+    closeBtn.addEventListener('click', function () {
+        overlay.style.display = 'none';
+    });
+
+    // Handle form submission
+    document.getElementById('popupForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        console.log('Name:', name);
+        console.log('Email:', email);
+        overlay.style.display = 'none';
+    });
+});
+
 $(document).ready(function () {
+
     $('.customer-logos').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -46,17 +72,17 @@ function scrollToTop() {
 // -------------------------for country flag and mobile-------------------------------------
 
 const phoneInputField = document.querySelector("#phone");
-   const phoneInput = window.intlTelInput(phoneInputField, {
-     utilsScript:
-       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-   });
+const phoneInput = window.intlTelInput(phoneInputField, {
+    utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
 
 
 // -----------------------------for increasing number------------------------------------
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     startCount('.count1', 350, 4000);
     startCount('.count2', 1080, 1000);
     startCount('.count3', 22, 5000);
@@ -69,7 +95,7 @@ function startCount(selector, maxValue, duration) {
     const interval = duration / (maxValue / step);
     let timer;
 
-    timer = setInterval(function() {
+    timer = setInterval(function () {
         currentCount += step;
         countElement.textContent = currentCount;
         if (currentCount >= maxValue) {
@@ -77,3 +103,5 @@ function startCount(selector, maxValue, duration) {
         }
     }, interval);
 }
+
+

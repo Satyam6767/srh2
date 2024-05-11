@@ -54,6 +54,67 @@
 
 <body>
 
+
+  <!-- ---------------------------Popup------------------------------------------ -->
+
+  <div class="overlay" id="overlay">
+    <div class="popup">
+      <!-- <div class="close-close"> -->
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <!-- </div> -->
+      <p>Start your journey with us</p>
+      <form id="popupForm">
+        <div class="col">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" required placeholder="First Name">
+            </div>
+            <div class="col-md-6">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" required placeholder="Last Name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="number"></label>
+              <input type="" id="name" name="name" required placeholder="Phone/Mobile">
+            </div>
+            <div class="col-md-6">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" required placeholder="Email">
+            </div>
+          </div>
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="Individual-investors" name="Individual investors" value="Individual investors">
+          <label for="vehicle1"> Individual investors</label><br>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="Corporate-investors" name="Corporate investors" value="Corporate investors">
+          <label for="vehicle2">Corporate investors</label><br>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="Family-offices" name="Family offices" value="Family offices">
+          <label for="vehicle2"> Family offices</label><br>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="Trust" name="Trust" value="Trust">
+            <label for="vehicle2">Trust</label><br>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="Corporate-borrowers" name="Corporate borrowers" value="Corporate borrowers">
+            <label for="vehicle2"> Corporate borrowers</label><br>
+        </div>
+
+          <button class="popup-submit" type="submit">Submit</button>
+
+
+      </form>
+    </div>
+  </div>
+
   <!-- ---------------------------top-header and navbar---------------------- -->
 
 
@@ -232,7 +293,8 @@
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a class="dropdown-item" href="./pages/other-services/msme-and-sme.html">MSME and SME Loans</a></li>
+                      <li><a class="dropdown-item" href="./pages/other-services/msme-and-sme.html">MSME and SME
+                          Loans</a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
@@ -288,9 +350,11 @@
         <div class="container conatiner-carousel">
           <div class="row align-items-center">
             <div class="col-md-7 ">
-              <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="display-4" >Equities</h1>
-              <p class="carousel-p" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1500">These are market-linked
-                investments and don’t offer any assured returns. Our team of experts studies various stocks and industries to
+              <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="display-4">Equities</h1>
+              <p class="carousel-p" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1500">These are
+                market-linked
+                investments and don’t offer any assured returns. Our team of experts studies various stocks and
+                industries to
                 identify the most profitable opportunities...</p>
               <a data-aos="fade-up" data-aos-duration="500" data-aos-delay="2000" href="./pages/products/equities.html"
                 class="btn btn-primary">Read More</a>
@@ -303,176 +367,185 @@
           </div>
         </div>
       </div>
-      
+
       <div class="carousel-item">
-  <div class="container conatiner-carousel">
-    <div class="row align-items-center">
-      <div class="col-md-7">
-        <h1 data-aos="fade-up" class="display-4" >Mutual Funds</h1>
-        <p class="carousel-p">Indian mutual fund houses offer multiple types of schemes like equity, debt, and
-          balanced funds. Within these categories, you can choose large, medium, and small cap funds.</p>
-        <a href="./pages/products/mutual-funds.html" class="btn btn-primary">Read More</a>
+        <div class="container conatiner-carousel">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <h1 data-aos="fade-up" class="display-4">Mutual Funds</h1>
+              <p class="carousel-p">Indian mutual fund houses offer multiple types of schemes like equity, debt, and
+                balanced funds. Within these categories, you can choose large, medium, and small cap funds.</p>
+              <a href="./pages/products/mutual-funds.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-5 d-none d-md-block">
+              <img src="https://srhworld.com/wp-content/uploads/2022/01/02-Mutual-Funds.jpg" alt="Image 2"
+                class="img-fluid carousel-img">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5 d-none d-md-block">
-        <img src="https://srhworld.com/wp-content/uploads/2022/01/02-Mutual-Funds.jpg" alt="Image 2"
-          class="img-fluid carousel-img">
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Similarly for other carousel items -->
+      <!-- Similarly for other carousel items -->
 
-<!-- Carousel item 3 -->
-<div class="carousel-item">
-  <div class="container conatiner-carousel">
-    <div class="row align-items-center">
-      <div class="col-md-7 ">
-        <h1 class="display-4" >Bonds</h1>
-        <p class="carousel-p">Bonds are a popular fixed-income asset class offering assured albeit lower returns.
-          Companies, banks, and even mutual funds offer different types of bonds. Further, you can invest in RBI
-          savings bonds and sovereign gold bonds.</p>
-        <a href="./pages/products/bonds.html" class="btn btn-primary">Read More</a>
+      <!-- Carousel item 3 -->
+      <div class="carousel-item">
+        <div class="container conatiner-carousel">
+          <div class="row align-items-center">
+            <div class="col-md-7 ">
+              <h1 class="display-4">Bonds</h1>
+              <p class="carousel-p">Bonds are a popular fixed-income asset class offering assured albeit lower returns.
+                Companies, banks, and even mutual funds offer different types of bonds. Further, you can invest in RBI
+                savings bonds and sovereign gold bonds.</p>
+              <a href="./pages/products/bonds.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-5  d-none d-md-block">
+              <img src="https://srhworld.com/wp-content/uploads/2022/01/02-Bonds.jpg" alt="Image 3"
+                class="img-fluid carousel-img">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5  d-none d-md-block">
-        <img src="https://srhworld.com/wp-content/uploads/2022/01/02-Bonds.jpg" alt="Image 3"
-          class="img-fluid carousel-img">
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Carousel item 4 -->
-<div class="carousel-item">
-  <div class="container conatiner-carousel">
-    <div class="row align-items-center">
-      <div class="col-md-7">
-        <h1 class="display-4" >Non-Convertible Debentures (NCD)</h1>
-        <p class="carousel-p">NCDs bear a fixed maturity date and the interest is paid either on maturity or at
-          periodic intervals. This asset class when chosen correctly can deliver low-risk high returns along with tax
-          benefits.</p>
-        <a href="./pages/products/non-convertible-debentures-ncd.html" class="btn btn-primary">Read More</a>
+      <!-- Carousel item 4 -->
+      <div class="carousel-item">
+        <div class="container conatiner-carousel">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <h1 class="display-4">Non-Convertible Debentures (NCD)</h1>
+              <p class="carousel-p">NCDs bear a fixed maturity date and the interest is paid either on maturity or at
+                periodic intervals. This asset class when chosen correctly can deliver low-risk high returns along with
+                tax
+                benefits.</p>
+              <a href="./pages/products/non-convertible-debentures-ncd.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-5 d-none d-md-block">
+              <img src="https://srhworld.com/wp-content/uploads/2022/01/01-NCD.jpg" alt="Image 4"
+                class="img-fluid carousel-img">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5 d-none d-md-block">
-        <img src="https://srhworld.com/wp-content/uploads/2022/01/01-NCD.jpg" alt="Image 4"
-          class="img-fluid carousel-img">
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Carousel item 5 -->
-<div class="carousel-item">
-  <div class="container conatiner-carousel">
-    <div class="row align-items-center">
-      <div class=" col-md-7">
-        <h1 class="display-4" >Unlisted Stocks</h1>
-        <p class="carousel-p">Unlisted companies are privately held and have not yet gone through the IPO process and
-          the primary benefit of investing in these stocks is that you get an early advantage of accessing new-age
-          innovative businesses.</p>
-        <a href="./pages/products/unlisted-stocks.html" class="btn btn-primary">Read More</a>
+      <!-- Carousel item 5 -->
+      <div class="carousel-item">
+        <div class="container conatiner-carousel">
+          <div class="row align-items-center">
+            <div class=" col-md-7">
+              <h1 class="display-4">Unlisted Stocks</h1>
+              <p class="carousel-p">Unlisted companies are privately held and have not yet gone through the IPO process
+                and
+                the primary benefit of investing in these stocks is that you get an early advantage of accessing new-age
+                innovative businesses.</p>
+              <a href="./pages/products/unlisted-stocks.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class=" col-md-5 d-none d-md-block">
+              <img src="https://srhworld.com/wp-content/uploads/2022/01/02-unlisted-stocks.jpg" alt="Image 5"
+                class="img-fluid carousel-img">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class=" col-md-5 d-none d-md-block">
-        <img src="https://srhworld.com/wp-content/uploads/2022/01/02-unlisted-stocks.jpg" alt="Image 5"
-          class="img-fluid carousel-img">
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Carousel item 6 -->
-<div class="carousel-item">
-  <div class="container conatiner-carousel">
-    <div class="row align-items-center">
-      <div class="col-md-7">
-        <h1 class="display-4" >Insurance</h1>
-        <p class="carousel-p">We work with industry leaders and experts to provide life and non-life insurance plans
-          that cater to the individual requirements of clients. SRH also is amongst the largest retailers of different
-          types of insurance products offered.</p>
-        <a href="./pages/products/insurance.html" class="btn btn-primary">Read More</a>
+      <!-- Carousel item 6 -->
+      <div class="carousel-item">
+        <div class="container conatiner-carousel">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <h1 class="display-4">Insurance</h1>
+              <p class="carousel-p">We work with industry leaders and experts to provide life and non-life insurance
+                plans
+                that cater to the individual requirements of clients. SRH also is amongst the largest retailers of
+                different
+                types of insurance products offered.</p>
+              <a href="./pages/products/insurance.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-5 d-none d-md-block">
+              <img src="https://srhworld.com/wp-content/uploads/2022/01/02-Insurance.jpg" alt="Image 6"
+                class="img-fluid carousel-img">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5 d-none d-md-block">
-        <img src="https://srhworld.com/wp-content/uploads/2022/01/02-Insurance.jpg" alt="Image 6"
-          class="img-fluid carousel-img">
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Carousel item 7 -->
-<div class="carousel-item">
-  <div class="container conatiner-carousel">
-    <div class="row align-items-center">
-      <div class="col-md-7 ">
-        <h1 class="display-4" >Fixed Income Securities</h1>
-        <p class="carousel-p">SRH helps in optimal tax planning for its clients and offers corporate fixed deposits,
-          commercial and industrial real estate rental property investments, and fixed income insurance plans.</p>
-        <a href="./pages/products/fixed-income-securities.html" class="btn btn-primary">Read More</a>
+      <!-- Carousel item 7 -->
+      <div class="carousel-item">
+        <div class="container conatiner-carousel">
+          <div class="row align-items-center">
+            <div class="col-md-7 ">
+              <h1 class="display-4">Fixed Income Securities</h1>
+              <p class="carousel-p">SRH helps in optimal tax planning for its clients and offers corporate fixed
+                deposits,
+                commercial and industrial real estate rental property investments, and fixed income insurance plans.</p>
+              <a href="./pages/products/fixed-income-securities.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class=" col-md-5 d-none d-md-block">
+              <img src="https://srhworld.com/wp-content/uploads/2022/01/02-Fix-Income.jpg" alt="Image 7"
+                class="img-fluid carousel-img">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class=" col-md-5 d-none d-md-block">
-        <img src="https://srhworld.com/wp-content/uploads/2022/01/02-Fix-Income.jpg" alt="Image 7"
-          class="img-fluid carousel-img">
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Carousel item 8 -->
-<div class="carousel-item">
-  <div class="container conatiner-carousel">
-    <div class="row align-items-center">
-      <div class="col-md-7">
-        <h1 class="display-4" >Offer For Sale (OFS)</h1>
-        <p class="carousel-p">Companies may require additional funds even after raising money via an IPO and opt for
-          OFS. The promoters dilute their shareholding via an exchange platform and all categories of investors can
-          bid for these shares.</p>
-        <a href="./pages/products/offer-for-sale-ofs.html" class="btn btn-primary">Read More</a>
+      <!-- Carousel item 8 -->
+      <div class="carousel-item">
+        <div class="container conatiner-carousel">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <h1 class="display-4">Offer For Sale (OFS)</h1>
+              <p class="carousel-p">Companies may require additional funds even after raising money via an IPO and opt
+                for
+                OFS. The promoters dilute their shareholding via an exchange platform and all categories of investors
+                can
+                bid for these shares.</p>
+              <a href="./pages/products/offer-for-sale-ofs.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-5 d-none d-md-block">
+              <img src="//srhworld.com/wp-content/uploads/2022/01/02-OFS.jpg" alt="Image 8"
+                class="img-fluid carousel-img">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5 d-none d-md-block">
-        <img src="//srhworld.com/wp-content/uploads/2022/01/02-OFS.jpg" alt="Image 8"
-          class="img-fluid carousel-img">
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Carousel item 9 -->
-<div class="carousel-item">
-  <div class="container conatiner-carousel">
-    <div class="row align-items-center">
-      <div class="col-md-7">
-        <h1 class="display-4" >New Fund Offerings (NFO)</h1>
-        <p class="carousel-p">NFOs are first-time subscription offers in new mutual fund schemes and lasts for a few
-          weeks. Our experts study the Scheme Information Document to understand the investment philosophy of the
-          offer.</p>
-        <a href="./pages/products/new-fund-offerings-nfo.html" class="btn btn-primary">Read More</a>
+      <!-- Carousel item 9 -->
+      <div class="carousel-item">
+        <div class="container conatiner-carousel">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <h1 class="display-4">New Fund Offerings (NFO)</h1>
+              <p class="carousel-p">NFOs are first-time subscription offers in new mutual fund schemes and lasts for a
+                few
+                weeks. Our experts study the Scheme Information Document to understand the investment philosophy of the
+                offer.</p>
+              <a href="./pages/products/new-fund-offerings-nfo.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-5 d-none d-md-block">
+              <img src="//srhworld.com/wp-content/uploads/2022/01/02-NFO.jpg" alt="Image 9"
+                class="img-fluid carousel-img">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5 d-none d-md-block">
-        <img src="//srhworld.com/wp-content/uploads/2022/01/02-NFO.jpg" alt="Image 9"
-          class="img-fluid carousel-img">
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Carousel item 10 -->
-<div class="carousel-item">
-  <div class="container conatiner-carousel">
-    <div class="row align-items-center">
-      <div class=" col-md-7">
-        <h1 class="display-4" >Initial Public Offerings (IPO)</h1>
-        <p class="carousel-p">IPOs are flooding the equity markets and investors are spoilt for choice and often
-          identifying the best IPO is tricky. With a detailed study and analysis of the company, IPO end use of funds,
-          industry outlook, order book...</p>
-        <a href="./pages/products/initial-public-offerings-ipo.html" class="btn btn-primary">Read More</a>
+      <!-- Carousel item 10 -->
+      <div class="carousel-item">
+        <div class="container conatiner-carousel">
+          <div class="row align-items-center">
+            <div class=" col-md-7">
+              <h1 class="display-4">Initial Public Offerings (IPO)</h1>
+              <p class="carousel-p">IPOs are flooding the equity markets and investors are spoilt for choice and often
+                identifying the best IPO is tricky. With a detailed study and analysis of the company, IPO end use of
+                funds,
+                industry outlook, order book...</p>
+              <a href="./pages/products/initial-public-offerings-ipo.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class=" col-md-5 d-none d-md-block">
+              <img src="//srhworld.com/wp-content/uploads/2022/01/01-ipo.jpg" alt="Image 10"
+                class="img-fluid carousel-img">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class=" col-md-5 d-none d-md-block">
-        <img src="//srhworld.com/wp-content/uploads/2022/01/01-ipo.jpg" alt="Image 10"
-          class="img-fluid carousel-img">
-      </div>
-    </div>
-  </div>
-</div>
 
     </div>
 
@@ -589,11 +662,13 @@
           <!-- Three cards in a row -->
           <div class="col-md-4 mb-4">
             <div class="card hover-card">
-              <img src="https://srhworld.com/wp-content/uploads/2022/01/portfolio.png" class="card-img-top" alt="Logo 1">
+              <img src="https://srhworld.com/wp-content/uploads/2022/01/portfolio.png" class="card-img-top"
+                alt="Logo 1">
               <div class="card-body">
                 <h4 class="card-title">Customized Portfolio Management</h4>
                 <p class="card-text">Selecting the right financial advisor is an important decision based on trust…</p>
-                <a href="./pages/services/customized-portfolio-management-services-pms.html" class="btn-without-border">Read More</a>
+                <a href="./pages/services/customized-portfolio-management-services-pms.html"
+                  class="btn-without-border">Read More</a>
               </div>
             </div>
           </div>
@@ -825,40 +900,40 @@
               </div>
             </div>
             <div class="row row-form"">
-              <div class="col-sm-6">
-                <input type="text" placeholder="Phone/Mobile">
-              </div>
-              <div class="col-sm-6">
-                <select id="select" name="products" required>
-                  <option value="">Select Products</option>
-                  <option value="Equities">Equities</option>
-                  <option value="Mutual Funds">Mutual Funds</option>
-                  <option value="Bonds">Bonds</option>
-                  <option value="Non-convertible debentures (NCD)">Non-convertible debentures (NCD)
-                  </option>
-                  <option value="Unlisted stocks">Unlisted stocks</option>
-                  <option value="Insurance">Insurance</option>
-                  <option value="Fixed Income Securities">Fixed Income Securities</option>
-                  <option value="Offer for sale (OFS)">Offer for sale (OFS)</option>
-                  <option value="New fund offerings">New fund offerings</option>
-                  <option value="Initial public offerings">Initial public offerings</option>
-                  <option value="Customized Portfolio Management Services(PMS)">Customized Portfolio
-                    Management Services(PMS)</option>
-                  <option value="Technical stock analysis">Technical stock analysis</option>
-                  <option value="Fundamental stock analysis">Fundamental stock analysis</option>
-                  <option value="Derivative analysis">Derivative analysis</option>
-                  <option value="Block deals">Block deals</option>
-                </select>
-              </div>
+              <div class=" col-sm-6">
+              <input type="text" placeholder="Phone/Mobile">
             </div>
-
-            <button class="call-btn">Request a call back</button>
-            
+            <div class="col-sm-6">
+              <select id="select" name="products" required>
+                <option value="">Select Products</option>
+                <option value="Equities">Equities</option>
+                <option value="Mutual Funds">Mutual Funds</option>
+                <option value="Bonds">Bonds</option>
+                <option value="Non-convertible debentures (NCD)">Non-convertible debentures (NCD)
+                </option>
+                <option value="Unlisted stocks">Unlisted stocks</option>
+                <option value="Insurance">Insurance</option>
+                <option value="Fixed Income Securities">Fixed Income Securities</option>
+                <option value="Offer for sale (OFS)">Offer for sale (OFS)</option>
+                <option value="New fund offerings">New fund offerings</option>
+                <option value="Initial public offerings">Initial public offerings</option>
+                <option value="Customized Portfolio Management Services(PMS)">Customized Portfolio
+                  Management Services(PMS)</option>
+                <option value="Technical stock analysis">Technical stock analysis</option>
+                <option value="Fundamental stock analysis">Fundamental stock analysis</option>
+                <option value="Derivative analysis">Derivative analysis</option>
+                <option value="Block deals">Block deals</option>
+              </select>
+            </div>
           </div>
+
+          <button class="call-btn">Request a call back</button>
+
         </div>
       </div>
-
     </div>
+
+  </div>
 
   </div>
   </div>
@@ -907,10 +982,12 @@
             </div>
             <div class="social-footer">
               <ul>
-                <a href="https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100094474942979"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/srh.world//"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/srh-world/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://twitter.com/srhworldpune"><i class="fa-brands fa-twitter"></i></a>
+                <a
+                  href="https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100094474942979"><i
+                    class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/srh.world//"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/srh-world/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/srhworldpune"><i class="fa-brands fa-twitter"></i></a>
               </ul>
             </div>
           </ul>
@@ -922,23 +999,28 @@
           <h5 class="text-uppercase mb-4 headi">Services</h5>
           <ul class="list-unstyled">
             <li>
-              <a href="./pages/services/customized-portfolio-management-services-pms.html" class="text-white"><i class="fa-solid fa-caret-right"></i> Customized Portfolio
+              <a href="./pages/services/customized-portfolio-management-services-pms.html" class="text-white"><i
+                  class="fa-solid fa-caret-right"></i> Customized Portfolio
                 Management Services (PMS)</a>
             </li>
             <li>
-              <a href="./pages/services/technical-stock-analysis.html" class="text-white"><i class="fa-solid fa-caret-right"></i> Technical Stock
+              <a href="./pages/services/technical-stock-analysis.html" class="text-white"><i
+                  class="fa-solid fa-caret-right"></i> Technical Stock
                 Analysis</a>
             </li>
             <li>
-              <a href="./pages/services/fundamental-stock-analysis.html" class="text-white"><i class="fa-solid fa-caret-right"></i> Fundamental Stock
+              <a href="./pages/services/fundamental-stock-analysis.html" class="text-white"><i
+                  class="fa-solid fa-caret-right"></i> Fundamental Stock
                 Analysis</a>
             </li>
             <li>
-              <a href="./pages/services/derivative-analysis.html" class="text-white"><i class="fa-solid fa-caret-right"></i> Derivative
+              <a href="./pages/services/derivative-analysis.html" class="text-white"><i
+                  class="fa-solid fa-caret-right"></i> Derivative
                 Analysis</a>
             </li>
             <li>
-              <a href="./pages/services/block-deals.html" class="text-white"><i class="fa-solid fa-caret-right"></i> Block Deals</a>
+              <a href="./pages/services/block-deals.html" class="text-white"><i class="fa-solid fa-caret-right"></i>
+                Block Deals</a>
             </li>
           </ul>
         </div>
