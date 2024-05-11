@@ -309,7 +309,7 @@ ul.header-list li a {
 }
 
 .hands {
-  border: 2px solid firebrick;
+  /* border: 2px solid firebrick; */
   margin-left: 45px;
   margin-top: 45px;
   margin-right: 45px;
@@ -368,17 +368,24 @@ ul.header-list li a {
 .whoweare h4 {
   color: wheat;
   font-size: 15px;
-  padding-top: 35px;
+  /* padding-top: 35px; */
+  padding-bottom: 25px;
+  margin: 0px;
   font-weight: bold;
 }
 
 .whoweare h1 {
   color: white;
-  /* font-size: 15px; */
-  /* padding-top: 35px; */
-  margin-top: 0px;
+  margin: 0px;
   font-weight: 700;
+  padding-bottom: 25px;
 }
+
+.whoweare p {
+  padding-bottom: 25px;
+  margin: 0px;
+}
+
 
 .who-we-button {
   border: none;
@@ -386,6 +393,8 @@ ul.header-list li a {
   background: none;
   color: white;
   font-weight: 700;
+  padding: 0px;
+  /* padding-bottom: 25px; */
 }
 
 .who-we-button a {
@@ -400,6 +409,11 @@ ul.header-list li a {
   padding-top: 115px;
   padding-bottom: 115px;
 }
+
+.hover-card:hover {
+  background-color: #29416f;
+}
+
 
 .our-services-card h2 {
   font-size: 30px;
@@ -424,11 +438,18 @@ ul.header-list li a {
 
 /* -----------------------------------------Our product------------------------------ */
 
-.ourproduct h1 {
-  padding-top: 35px;
-  color: black;
+.ourproduct h2 {
+  font-size: 30px;
+  color: #0a1531;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  padding-top: 70px;
 }
-
+.empty-space-our-products{
+  height: 70px;
+}
 
 
 
@@ -440,11 +461,6 @@ ul.header-list li a {
   padding-bottom: 0px;
 
 }
-
-
-
-
-
 
 .img-slider h2 {
   color: black;
@@ -575,16 +591,19 @@ ul.header-list li a {
   background-size: cover;
 }
 
-.getcall-heading h1 {
-  color: white;
-}
+
+
 
 .get-call-back-cont {
   padding: 115px 50px;
 }
 
-.getcall-heading h1 {
+.getcall-heading h2 {
   color: white;
+  font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 20px;
 }
 
 
