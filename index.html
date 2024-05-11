@@ -57,63 +57,70 @@
 
   <!-- ---------------------------Popup------------------------------------------ -->
 
-  <div class="overlay" id="overlay">
-    <div class="popup">
-      <!-- <div class="close-close"> -->
-      <button class="close-btn" id="closeBtn">&times;</button>
-      <!-- </div> -->
-      <p>Start your journey with us</p>
-      <form id="popupForm">
-        <div class="col">
-          <div class="row">
-            <div class="col-md-6">
-              <label for="name"></label>
-              <input type="text" id="name" name="name" required placeholder="First Name">
-            </div>
-            <div class="col-md-6">
-              <label for="name"></label>
-              <input type="text" id="name" name="name" required placeholder="Last Name">
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="overlay" id="overlay">
+          <div class="popup">
+            <!-- <div class="close-close"> -->
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <!-- </div> -->
+            <p>Start your journey with us</p>
+            <form id="popupForm">
+              <div class="col">
+                <div class="row">
+                  <div class="col-md-6 col-6">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" required placeholder="First Name">
+                  </div>
+                  <div class="col-md-6 col-6">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" required placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-6">
+                    <label for="number"></label>
+                    <input type="" id="name" name="name" required placeholder="Phone/Mobile">
+                  </div>
+                  <div class="col-md-6 col-6">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" required placeholder="Email">
+                  </div>
+                </div>
+              </div>
+      
+              <div class="checkbox-container">
+                <input type="checkbox" id="Individual-investors" name="Individual investors" value="Individual investors">
+                <label for="vehicle1"> Individual investors</label><br>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="Corporate-investors" name="Corporate investors" value="Corporate investors">
+                <label for="vehicle2">Corporate investors</label><br>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="Family-offices" name="Family offices" value="Family offices">
+                <label for="vehicle2"> Family offices</label><br>
+              </div>
+              <div class="checkbox-container">
+                  <input type="checkbox" id="Trust" name="Trust" value="Trust">
+                  <label for="vehicle2">Trust</label><br>
+              </div>
+              <div class="checkbox-container">
+                  <input type="checkbox" id="Corporate-borrowers" name="Corporate borrowers" value="Corporate borrowers">
+                  <label for="vehicle2"> Corporate borrowers</label><br>
+              </div>
+      
+                <button class="popup-submit" type="submit">Submit</button>
+      
+      
+            </form>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="number"></label>
-              <input type="" id="name" name="name" required placeholder="Phone/Mobile">
-            </div>
-            <div class="col-md-6">
-              <label for="name"></label>
-              <input type="text" id="name" name="name" required placeholder="Email">
-            </div>
-          </div>
         </div>
-
-        <div class="checkbox-container">
-          <input type="checkbox" id="Individual-investors" name="Individual investors" value="Individual investors">
-          <label for="vehicle1"> Individual investors</label><br>
-        </div>
-        <div class="checkbox-container">
-          <input type="checkbox" id="Corporate-investors" name="Corporate investors" value="Corporate investors">
-          <label for="vehicle2">Corporate investors</label><br>
-        </div>
-        <div class="checkbox-container">
-          <input type="checkbox" id="Family-offices" name="Family offices" value="Family offices">
-          <label for="vehicle2"> Family offices</label><br>
-        </div>
-        <div class="checkbox-container">
-            <input type="checkbox" id="Trust" name="Trust" value="Trust">
-            <label for="vehicle2">Trust</label><br>
-        </div>
-        <div class="checkbox-container">
-            <input type="checkbox" id="Corporate-borrowers" name="Corporate borrowers" value="Corporate borrowers">
-            <label for="vehicle2"> Corporate borrowers</label><br>
-        </div>
-
-          <button class="popup-submit" type="submit">Submit</button>
-
-
-      </form>
+      </div>
     </div>
   </div>
+  
 
   <!-- ---------------------------top-header and navbar---------------------- -->
 

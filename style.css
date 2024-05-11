@@ -25,16 +25,22 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 80%;
 
   padding: 18px;
-    border-radius: 0px;
-    border: 4px solid #116a37;
-    box-shadow: 0px 10px 25px 0px rgba(2, 2, 2, 0.50);
-    background-color: rgba(10, 21, 49, 1.00);
+  border-radius: 0px;
+  border: 4px solid #116a37;
+  box-shadow: 0px 10px 25px 0px rgba(2, 2, 2, 0.50);
+  background-color: rgba(10, 21, 49, 1.00);
 
 
 
+}
+
+@media (min-width: 576px) {
+  .popup {
+      width: 60%; /* Adjust width for smaller screens */
+  }
 }
 
 .popup h2 {
@@ -53,12 +59,12 @@ body {
 }
 
 .close-btn {
-  
+
   color: white;
   border: none;
   cursor: pointer;
   background-color: grey;
-  
+
 }
 
 
@@ -86,24 +92,25 @@ body {
 }
 
 .checkbox-container input[type="checkbox"] {
-  margin-right: 10px; /* Adjust margin as needed */
+  margin-right: 10px;
+  /* Adjust margin as needed */
   color: white;
 }
 
-.checkbox-container label{
+.checkbox-container label {
   color: white;
   margin-bottom: 2px;
 }
 
 
 
-.popup-submit{
+.popup-submit {
   background-color: #eee;
-    border: 1px solid #ddd;
-    color: #333;
-    font-size: 1em;
-    padding: 10px 15px;
-    margin-top: 8px;
+  border: 1px solid #ddd;
+  color: #333;
+  font-size: 1em;
+  padding: 10px 15px;
+  margin-top: 8px;
 }
 
 /* ------------------------------------top-head-------------------------- */
